@@ -4,8 +4,8 @@ public class Pyramid extends ThreeDShape {
     //fields
     private double edgeLength;
 
-    public Pyramid(double height, double edgeLength) {
-        super(height);
+    public Pyramid(String baseType, double height, double edgeLength) {
+        super(baseType, height);
         this.edgeLength = edgeLength;
     }
 
@@ -22,9 +22,6 @@ public class Pyramid extends ThreeDShape {
 
     @Override
     public String toString() {
-        return "Pyramid{" +
-                "edgeLength=" + edgeLength +
-                ", height=" + height +
-                '}';
+        return baseType +"," + " " + "Height=" + height+"," + " " + "EdgeLength=" + edgeLength;
     }
 }

@@ -5,8 +5,8 @@ public class Cone extends ThreeDShape {
     private double radius;
 
     //constructor
-    public Cone(double height, double radius) {
-        super(height);
+    public Cone(String baseType, double height, double radius) {
+        super(baseType, height);
         this.radius = radius;
     }
 
@@ -23,9 +23,6 @@ public class Cone extends ThreeDShape {
 
     @Override
     public String toString() {
-        return "Cone{" +
-                "radius=" + radius +
-                ", height=" + height +
-                '}';
+        return baseType +"," + " " + "Height=" + height+"," + " " + "Radius=" + radius;
     }
 }

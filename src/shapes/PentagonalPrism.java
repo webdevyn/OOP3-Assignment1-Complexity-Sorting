@@ -3,8 +3,8 @@ package shapes;
 public class PentagonalPrism extends Prism {
 
     //Constructor
-    public PentagonalPrism(double height, String baseType, double edgeLength) {
-        super(height, baseType, edgeLength);
+    public PentagonalPrism(String baseType, double height, double edgeLength) {
+        super(baseType, height, edgeLength);
     }
 
     @Override
@@ -21,11 +21,7 @@ public class PentagonalPrism extends Prism {
 
     @Override
     public String toString() {
-        return "PentagonalPrism{" +
-                "baseType='" + baseType + '\'' +
-                ", height=" + height +
-                ", edgeLength=" + edgeLength +
-                '}';
+        return baseType +"," + " " + "Height=" + height+"," + " " + "EdgeLength=" + edgeLength;
     }
 
 

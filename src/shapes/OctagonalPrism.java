@@ -3,8 +3,8 @@ package shapes;
 public class OctagonalPrism extends Prism {
 
     //Constructor
-    public OctagonalPrism(double height, String baseType, double edgeLength) {
-        super(height, baseType, edgeLength);
+    public OctagonalPrism(String baseType, double height, double edgeLength) {
+        super(baseType, height, edgeLength);
     }
 
     @Override
@@ -20,11 +20,7 @@ public class OctagonalPrism extends Prism {
 
     @Override
     public String toString() {
-        return "OctagonalPrism{" +
-                "baseType='" + baseType + '\'' +
-                ", height=" + height +
-                ", edgeLength=" + edgeLength +
-                '}';
+        return baseType +"," + " " + "Height=" + height+"," + " " + "EdgeLength=" + edgeLength;
     }
 
 
