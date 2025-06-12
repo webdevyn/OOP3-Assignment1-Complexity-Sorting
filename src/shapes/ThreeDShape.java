@@ -2,17 +2,24 @@ package shapes;
 
 public abstract class ThreeDShape implements Comparable<ThreeDShape> {
     //fields
+    protected String baseType;
     protected double height;
 
     //Constructor
-    public ThreeDShape(double height) {
+    public ThreeDShape(String baseType, double height) {
+        this.baseType = baseType;
         this.height = height;
     }
 
     //getter
+    public String getBaseType() {
+        return baseType;
+    }
+
     public double getHeight() {
         return height;
     }
+
 
     //implement compareTo() from Comparable<>
     @Override

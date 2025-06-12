@@ -3,8 +3,8 @@ package shapes;
 public class SquarePrism extends Prism {
 
     //Constructor
-    public SquarePrism(double height, String baseType, double edgeLength) {
-        super(height, baseType, edgeLength);
+    public SquarePrism(String baseType, double height, double edgeLength) {
+        super(baseType, height, edgeLength);
     }
 
     @Override
@@ -20,11 +20,7 @@ public class SquarePrism extends Prism {
 
     @Override
     public String toString() {
-        return "SquarePrism{" +
-                "baseType='" + baseType + '\'' +
-                ", height=" + height +
-                ", edgeLength=" + edgeLength +
-                '}';
+        return baseType +"," + " " + "Height=" + height+"," + " " + "EdgeLength=" + edgeLength;
     }
 
 
