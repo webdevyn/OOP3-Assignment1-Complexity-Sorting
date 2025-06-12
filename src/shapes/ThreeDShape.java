@@ -1,5 +1,7 @@
 package shapes;
 
+import java.util.List;
+
 public abstract class ThreeDShape implements Comparable<ThreeDShape> {
     //fields
     protected String baseType;
