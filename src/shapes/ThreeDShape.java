@@ -1,5 +1,6 @@
 package shapes;
 
+import java.util.Comparator;
 import java.util.List;
 
 public abstract class ThreeDShape implements Comparable<ThreeDShape> {
@@ -22,14 +23,19 @@ public abstract class ThreeDShape implements Comparable<ThreeDShape> {
         return height;
     }
 
+    public abstract double BaseArea();
 
-    //implement compareTo() from Comparable<>
+    public abstract double Volume();
+
+    //implement compareTo() from Comparable<> to compare shapes by height
     @Override
     public int compareTo(ThreeDShape otherShape) {
         return Double.compare(this.height, otherShape.height);
     }
 
-    public abstract double BaseArea();
+    //create method to compare based on base area
+    public static final Comparator<ThreeDShape> BaseAreaComparator = (shape1, shape2) ->  Double.compare(shape1.BaseArea(), shape2.BaseArea());
 
-    public abstract void Volume();
+    //create method to compare based on volume
+    public static final Comparator<ThreeDShape> VolumeComparator = (shape1, shape2) -> Double.compare(shape1.Volume(), shape2.Volume());
 }

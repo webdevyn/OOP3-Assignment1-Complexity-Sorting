@@ -16,8 +16,9 @@ public class Cylinder extends ThreeDShape {
     }
 
     @Override
-    public void Volume() {
+    public double Volume() {
         double volume = Math.PI * Math.pow(radius, 2) * height;
+        return volume;
     }
 
     @Override
