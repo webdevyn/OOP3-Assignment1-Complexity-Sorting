@@ -17,8 +17,9 @@ public class Cone extends ThreeDShape {
     }
 
     @Override
-    public void Volume() {
+    public double Volume() {
         double volume = (1/3) * Math.PI * Math.pow(radius, 2) * height;
+        return volume;
     }
 
     @Override

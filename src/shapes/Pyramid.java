@@ -16,8 +16,9 @@ public class Pyramid extends ThreeDShape {
     }
 
     @Override
-    public void Volume() {
+    public double Volume() {
         double volume = (1/3) * Math.pow(edgeLength, 2) * height;
+        return volume;
     }
 
     @Override

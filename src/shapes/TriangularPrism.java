@@ -14,8 +14,9 @@ public class TriangularPrism extends Prism {
     }
 
     @Override
-    public void Volume() {
+    public double Volume() {
         double volume = BaseArea() * height;
+        return volume;
     }
 
     @Override

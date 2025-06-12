@@ -17,7 +17,11 @@ public class AppDriver
 		//ensure to add parameter of file path to readfile method
 		ReadFile(pathName);
 
-		SortByHeight(shapesArray);
+		//SortByHeight(shapesArray);
+
+		//SortByBaseArea(shapesArray);
+
+		//SortByVolume(shapesArray);
 
 		//print out each array item
 		for (ThreeDShape shape : shapesArray) {

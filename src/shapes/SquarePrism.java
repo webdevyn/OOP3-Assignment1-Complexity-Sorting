@@ -14,8 +14,9 @@ public class SquarePrism extends Prism {
     }
 
     @Override
-    public void Volume() {
+    public double Volume() {
         double volume = Math.pow(edgeLength, 2) * height;
+        return volume;
     }
 
     @Override

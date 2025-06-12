@@ -93,6 +93,16 @@ public class Methods {
         Arrays.sort(shapesArray);
     }
 
+    //sort by base area
+    public static void SortByBaseArea(ThreeDShape[] shapesArray) {
+        Arrays.sort(shapesArray, ThreeDShape.BaseAreaComparator);
+    }
+
+    //sort by volume
+    public static void SortByVolume(ThreeDShape[] shapesArray) {
+        Arrays.sort(shapesArray, ThreeDShape.VolumeComparator);
+    }
+
 }
 
 
