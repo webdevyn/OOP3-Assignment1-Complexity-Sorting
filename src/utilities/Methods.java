@@ -5,6 +5,8 @@ import shapes.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
+import java.util.Collections;
 import java.util.Scanner;
 
 public class Methods {
@@ -45,13 +47,9 @@ public class Methods {
             e.printStackTrace();
         }
 
-        //print out each array item
-        for (ThreeDShape shape : shapesArray) {
-            System.out.println(shape);
-        }
-
     }
 
+    //Create the shape objects
     public static ThreeDShape CreateShape(String[] shapeInfo) {
         String baseType = shapeInfo[0];
         double height = Double.parseDouble(shapeInfo[1]);
@@ -90,6 +88,10 @@ public class Methods {
         };
     }
 
+    //Sort by height
+    public static void SortByHeight(ThreeDShape[] shapesArray) {
+        Arrays.sort(shapesArray);
+    }
 
 }
 
