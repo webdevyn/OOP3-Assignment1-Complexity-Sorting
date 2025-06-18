@@ -1,12 +1,12 @@
 package utilities;
 
 import shapes.*;
+import utilities.SortingMethods.BubbleSort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.Scanner;
 
 public class Methods {
@@ -88,19 +88,28 @@ public class Methods {
         };
     }
 
-    //Sort by height
+    //SortHeight by height
     public static void SortByHeight(ThreeDShape[] shapesArray) {
-        Arrays.sort(shapesArray);
+        BubbleSort.SortHeight(shapesArray);
+        //InsertionSort.SortHeight(shapesArray);
+        //MergeSort.SortHeight(shapesArray);
+        //etc.
     }
 
-    //sort by base area
-    public static void SortByBaseArea(ThreeDShape[] shapesArray) {
+    //Compare by base area
+    public static void CompareByBaseArea(ThreeDShape[] shapesArray) {
         Arrays.sort(shapesArray, ThreeDShape.BaseAreaComparator);
     }
 
-    //sort by volume
-    public static void SortByVolume(ThreeDShape[] shapesArray) {
+    //Compare by volume
+    public static void CompareByVolume(ThreeDShape[] shapesArray) {
         Arrays.sort(shapesArray, ThreeDShape.VolumeComparator);
+    }
+
+    public static void PrintShapes(ThreeDShape[] shapesArray) {
+        for (int i = 0; i < shapesArray.length; i++) {
+            System.out.print(shapesArray[i] + " \n");
+        }
     }
 
 }

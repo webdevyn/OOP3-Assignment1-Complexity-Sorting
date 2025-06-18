@@ -2,6 +2,7 @@ package appDomain;
 
 import shapes.ThreeDShape;
 import utilities.Methods;
+import utilities.SortingMethods.BubbleSort;
 
 import java.util.Collections;
 
@@ -17,16 +18,16 @@ public class AppDriver
 		//ensure to add parameter of file path to readfile method
 		ReadFile(pathName);
 
-		//SortByHeight(shapesArray);
+		SortByHeight(shapesArray);
 
-		//SortByBaseArea(shapesArray);
+		//CompareByBaseArea(shapesArray);
 
-		//SortByVolume(shapesArray);
+		//CompareByVolume(shapesArray);
 
-		//print out each array item
-		for (ThreeDShape shape : shapesArray) {
-			System.out.println(shape);
-		}
+		//PrintShapes(shapesArray);
+
+		//BubbleSort.SortHeight();
+
 
 	}
 
