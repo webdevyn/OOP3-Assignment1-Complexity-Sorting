@@ -3,7 +3,7 @@ package shapes;
 import java.util.Comparator;
 import java.util.List;
 
-public abstract class ThreeDShape implements Comparable<ThreeDShape> {
+public abstract class ThreeDShape implements Comparable<shapes.ThreeDShape> {
     //fields
     protected String baseType;
     protected double height;
@@ -29,7 +29,7 @@ public abstract class ThreeDShape implements Comparable<ThreeDShape> {
 
     //implement compareTo() from Comparable<> to compare shapes by height
     @Override
-    public int compareTo(ThreeDShape otherShape) {
+    public int compareTo(shapes.ThreeDShape otherShape) {
         return Double.compare(this.height, otherShape.height);
     }
 
