@@ -1,7 +1,7 @@
 package utilities;
 
 import shapes.*;
-import utilities.SortingMethods.BubbleSort;
+import utilities.SortingMethods.*;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -90,10 +90,18 @@ public class Methods {
 
     //SortHeight by height
     public static void SortByHeight(ThreeDShape[] shapesArray) {
-        BubbleSort.SortHeight(shapesArray);
+        //BubbleSort.SortHeight(shapesArray);
         //InsertionSort.SortHeight(shapesArray);
         //MergeSort.SortHeight(shapesArray);
-        //etc.
+        //QuickSort.SortHeight(shapesArray);
+        SelectionSort.SortHeight(shapesArray);
+    }
+    public static void SortByBaseArea(ThreeDShape[] shapesArray) {
+        //BubbleSort.SortBaseArea(shapesArray);
+        //InsertionSort.SortBaseArea(shapesArray);
+        //MergeSort.SortBaseArea(shapesArray);
+        //QuickSort.SortBaseArea(shapesArray);
+        SelectionSort.SortBaseArea(shapesArray);
     }
 
     //Compare by base area

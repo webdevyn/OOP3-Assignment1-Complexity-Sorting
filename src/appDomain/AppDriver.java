@@ -17,16 +17,18 @@ public class AppDriver
 		String pathName = "res/shapes1.txt";
 		//ensure to add parameter of file path to readfile method
 		ReadFile(pathName);
+		System.out.println("Before Sorting");
 
-		SortByHeight(shapesArray);
+		PrintShapes(shapesArray);
+
+		System.out.println("After Sorting");
+		SortByBaseArea(shapesArray);
 
 		//CompareByBaseArea(shapesArray);
 
 		//CompareByVolume(shapesArray);
 
-		//PrintShapes(shapesArray);
-
-		//BubbleSort.SortHeight();
+		PrintShapes(shapesArray);
 
 
 	}
